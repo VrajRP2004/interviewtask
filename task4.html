@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Heading Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Hello, World!</h1>
+    <button onclick="changeHeading()">Change Heading</button>
+
+    <script>
+        function changeHeading() {
+            document.getElementById("heading").textContent = "The Heading Has Changed!";
+        }
+    </script>
+</body>
+</html>
+
+<!-- HTML Structure:
+
+<h1>: Displays the initial heading text (Hello, World!).
+<button>: A clickable button that triggers the changeHeading function when clicked using the onclick attribute.
+CSS Styles:
+
+Body styling: Ensures the content is center-aligned with appropriate font and spacing.
+Heading styling: Gives a neat, dark gray color to the heading.
+Button styling: Adds a modern, rounded button design with a hover effect to improve user experience.
+JavaScript Functionality:
+
+The changeHeading function uses document.getElementById() to find the <h1> element by its ID (heading) and modifies its textContent property to update the displayed text. -->
